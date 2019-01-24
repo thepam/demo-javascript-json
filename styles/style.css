@@ -1,0 +1,279 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+a:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+header h3 a, header h3 a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.book{
+	overflow: hidden;
+}
+
+.book .cover, .book .info{
+	float: left;
+}
+
+.book .cover img {
+    width: 130px;
+    margin-top: 6px;
+}
+
+.book .info {
+    width: 78%;
+}
+
+p{
+	padding-left: 15px;
+}
+
+.title{
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 0 0 2px 0;
+}
+
+.book .info p.authoretc {
+    margin: 0;
+    font-size: 12px;
+    font-variant: small-caps;
+    color: #999;
+}
+
+.book .info p.genres {
+    font-style: italic;
+}
+
+#genre-list{
+	display:block;
+}
+
+.menu-container ul li {
+    padding: 15px 0 15px 10px;
+    border-top: 1px solid #ccc;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.menu-container ul li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-container ul li.selected{
+	background: #26a69a;
+	color: white;
+	font-weight: bold;
+}
+
+.menu-container h5{
+	margin:0;
+	font-weight: bold;
+}
+
+#content-list .no-results{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#content-list .no-results .bigicon{
+	font-size: 140px;
+}
+
+#menuarrow{
+	display:none;
+}
+
+.menutitle{
+	display: block;
+}
+
+.star-rating{
+	white-space:nowrap;
+}
+
+/*Single item styles*/
+
+#breadcrumbs{
+	padding: 10px 20px;
+}
+
+#breadcrumbs a{
+	color:#26a69a;
+	font-weight: bold;
+}
+
+#book-item p{
+	padding: 0;
+}
+
+#book-item h2, #book-item h1{
+	font-size: 1.8em;
+    margin: 0;
+    color:#26a69a;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+#book-item  .card-panel h3{
+	font-size: 1.6em;
+	color: #aaa;
+	margin: 0;
+}
+
+#book-item h4{
+	font-size: 1em;
+	color: #333;
+	font-style: oblique;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#book-ratings{
+	margin: 0;
+	padding: 10px 0;
+}
+
+#book-ratings .ratings{
+	padding: 0 10px;
+	color: #aaa;
+}
+
+#book-item .col img{
+	width:100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+#book-item .comment{
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #aaa;
+}
+
+#book-item .comment:last-child{
+	border: 0;
+}
+
+#book-item .comment-icon{
+	padding-top: 20px;
+}
+
+#book-item .comment-icon .fa{
+	font-size: 4em;
+	color: #aaa;
+}
+
+#book-item .comment-name{
+	margin: 0;
+    padding-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#26a69a;
+}
+
+#book-item .comment-name span{
+	font-size: 1em;
+	font-weight: lighter;
+	padding: 0 15px;
+}
+
+#book-item .comment-date{
+	margin: 0;
+	padding: 5px 0 10px 0;
+	color: #aaa;
+}
+
+#book-item .menutitle{
+	display:block;
+}
+
+@media screen and (max-width: 1245px) {
+	.book .info {
+	    width: 72%;
+	}
+
+	#book-item .comment-icon .fa{
+		font-size: 3em;
+		color: #aaa;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.book .cover img {
+	    width: 100px;
+	    margin-top: 6px;
+	}
+
+	#book-item .comment-icon .fa{
+		font-size: 2.4em;
+		color: #aaa;
+	}
+
+	#book-item .comment-icon{
+		padding-top: 25px;
+	}
+
+	#genre-list{
+		display: none;
+	}
+
+	.menu-container ul{
+		overflow: hidden;
+	}
+
+	.menu-container ul li {
+	    padding: 15px;
+	    border: 1px solid #ccc;
+	    text-transform: capitalize;
+	    float: left;
+	    margin: 5px;
+	}
+	.menu-container h5{
+		margin:0;
+		font-weight: bold;
+		font-size: 1.4em;
+	}
+
+	#menuarrow{
+		display: block;
+		cursor:pointer;
+	}
+
+	#menuarrow .fa-arrow-down{
+		display:block;
+		float: right;
+	}
+
+	.menutitle{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.book .cover, .book .info{
+		width: 100%;
+		text-align: center;
+	}
+
+	.book .cover img {
+	    width: auto;
+	    margin-top: 0;
+	}
+
+	p{
+		padding-left: 0;
+	}
+
+	#book-item .comment-icon .fa{
+		font-size: 1.8em;
+		color: #aaa;
+	}
+
+	#book-item .comment-icon{
+		padding-top: 30px;
+	}
+}
