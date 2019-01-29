@@ -136,7 +136,7 @@ function setContentBook(books){
 				code = code + "<div class='col s11'>";
 				code = code + "<p class='comment-name'>"+review['name']+" <span>"+createStars(review['rating'])+"</span></p>";
 				code = code + "<p class='comment-date'>"+friendlyDate(review['date'])+"</p>";
-				code = code + "<div class='comment-text'><p>"+review['text'].split("\n").join("</p><p>")+"</p></div>";
+				code = code + "<div class='comment-text'><p>"+review['text'].replace(/\n/g, "</p><p>")+"</p></div>";
 				code = code + "</div></div>";
 			});
 			code = code + "</aside>";
