@@ -128,7 +128,7 @@ function setContentBook(books){
 			}
 			code = code + "<h4>Written by "+book['author']+" in "+book['year']+"</h4>";
 			code = code + "<p id='book-ratings'><span class='stars'>"+createStars(book['rating'])+"</span><span class='ratings'>("+book['numratings']+" ratings)</span></p>";
-			code = code + "<div class='book-desc'><p>"+book['description'].replace(/(\r\n|\n\r|\r|\n)/gm, "</p><p>")+"</p></div>";
+			code = code + "<div class='book-desc'><p>"+book['description'].split("\n").join("</p><p>")+"</p></div>";
 			code = code + "</article>";
 			code = code + "<aside class='card-panel'><h2>Reviews</h2>";
 			book['reviews'].forEach( function (review) {
@@ -136,7 +136,7 @@ function setContentBook(books){
 				code = code + "<div class='col s11'>";
 				code = code + "<p class='comment-name'>"+review['name']+" <span>"+createStars(review['rating'])+"</span></p>";
 				code = code + "<p class='comment-date'>"+friendlyDate(review['date'])+"</p>";
-				code = code + "<div class='comment-text'><p>"+review['text'].replace(/(\r\n|\n\r|\r|\n)/gm, "</p><p>")+"</p></div>";
+				code = code + "<div class='comment-text'><p>"+review['text'].split("\n").join("</p><p>")+"</p></div>";
 				code = code + "</div></div>";
 			});
 			code = code + "</aside>";
