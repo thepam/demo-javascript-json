@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Books</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+	<main>
+        <header class="row">
+			<div class="col s12 teal lighten-1 white-text"><h3><a href="index.html"><span class="fa fa-book"></span> Books</a></h3></div>
+		</header>
+		<div class="row">
+			<div class="col s12 l3">
+				<div class="menu-container grey lighten-3 card-panel">
+					<h5 class="menutitle teal-text">Book Genres</h5>
+					<h5 id="menuarrow" class="teal-text">Book Genres<i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
+					<div id="genre-list">
+					</div>
+				</div>
+			</div>
+			<div id="content-list" class="col s12 l9 white">
+				<div class="no-results card-panel">
+					<i class="bigicon fa fa-frown-o teal-text" aria-hidden="true"></i>
+					<p>No books found, try activating more genre filters.</p>
+				</div>
+			</div>
+    	</div>		
+     </main>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

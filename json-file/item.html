@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+	<main id="book-item">
+        <header class="row">
+			<div class="col s12 teal lighten-1 white-text"><h3><a href="index.html"><span class="fa fa-book"></span> Books</a></h3></div>
+			<div id="breadcrumbs" class="col s12 grey lighten-3 grey-text"><a class="home-crumb" href="index.html">Book Listing</a> <i class="fa fa-chevron-right"></i> <span id="book-crumb">Name of the selected book here</span></div>
+		</header>
+		<div class="row">
+			<div id="content-list" class="col s12 m12 l9 white">
+				<div class="no-results card-panel">
+					<i class="bigicon fa fa-frown-o teal-text" aria-hidden="true"></i>
+					<p>No info on this book found.</p>
+				</div>
+			</div>
+			<div class="col s12 m12 l3">
+				<div class="menu-container grey lighten-3 card-panel">
+					<h5 class="menutitle teal-text">About the Author</h5>
+					<div id="author-info">
+						
+					</div>
+				</div>
+			</div>
+    	</div>		
+     </main>
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
